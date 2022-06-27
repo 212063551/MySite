@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from '@/components/Header';
+import Header from '@/pages/components/Header';
 import home from './index.less';
-import Bottom from '@/components/Bottom';
-
+import Bottom from '@/pages/components/Bottom';
 const Home: React.FC = () => {
 	return (
 		<>

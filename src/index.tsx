@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
@@ -9,6 +9,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
 	<BrowserRouter>
-		<App />
+		<Suspense>
+			<App />
+		</Suspense>
 	</BrowserRouter>
 );

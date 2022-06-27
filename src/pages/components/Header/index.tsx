@@ -1,18 +1,18 @@
 import React from 'react';
-import Switch from '../Switch';
-import SearchBox from '../SearchBox';
-import IMGS from '@/images/logo.png';
+import Switch from '@/components/Switch';
+import SearchBox from '@/components/SearchBox';
 import { useNavigate } from 'react-router-dom';
+import IMGS from '@/images/logo.png';
 import header from './index.less';
 
-const Header: React.FC = () => {
+const Header: React.FC = (props) => {
 	const to = useNavigate();
 	return (
 		<>
 			<div id={header.app}>
 				<div className={header.app}>
 					<div id={header.logo}>
-						<img src={IMGS} alt='' srcSet='' />
+						<img src={IMGS} alt='图片加载失败' srcSet='' />
 					</div>
 					<div id={header.header}>
 						<span
