@@ -6134,6 +6134,18 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
+marked-react@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmmirror.com/marked-react/-/marked-react-1.1.2.tgz#c3d9802a13757d82353afee95dace84c22c89908"
+  integrity sha512-GeeAB5iIH4FaSxoQn/pb9iXn1/1Go5Jpa9ZTtNHFRcZ6vpfYOhgWakFMK9fCfvUIHNMa1uh6MHcefgW1Ss5yKw==
+  dependencies:
+    marked "^4.0.12"
+
+marked@^4.0.12:
+  version "4.0.17"
+  resolved "https://registry.npmmirror.com/marked/-/marked-4.0.17.tgz#1186193d85bb7882159cdcfc57d1dfccaffb3fe9"
+  integrity sha512-Wfk0ATOK5iPxM4ptrORkFemqroz0ZDxp5MWfYA7H/F+wO17NRWV5Ypxi6p3g2Xmw2bKeiYOl6oVnLHKxBA0VhA==
+
 mdast-util-definitions@^5.0.0:
   version "5.1.1"
   resolved "https://registry.npmmirror.com/mdast-util-definitions/-/mdast-util-definitions-5.1.1.tgz#2c1d684b28e53f84938bb06317944bee8efa79db"

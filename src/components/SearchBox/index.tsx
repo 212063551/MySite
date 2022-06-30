@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import Label from '../Label';
 import { failApi } from '@/api';
 import NoContent from '@/images/NoContent.svg';
 import searchbox from './index.less';
@@ -21,6 +20,8 @@ const SearchBox: React.FC = () => {
 	const eliminate = (e: any) => {
 		const value = e.target.value;
 		const NewVlaue = value.replace(/\s+/g, '');
+		console.log(NewVlaue);
+
 		if (NewVlaue.length !== 0) {
 			setState(true);
 		} else {
@@ -85,7 +86,7 @@ const SearchBox: React.FC = () => {
 				>
 					<div className={searchbox.searchboxList_list}>
 						{searchboxList?.map((item: any, index) => {
-							return <Label key={index} content={item.title} />;
+							return <span key={index}>{item.title} </span>;
 						})}
 					</div>
 					<div className={searchbox.searchboxList_list_con}>

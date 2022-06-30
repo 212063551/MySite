@@ -31,7 +31,7 @@ axios.interceptors.response.use(
 		return response;
 	},
 	(error) => {
-		console.log('请求出错：', error);
+		console.log(error);
 	}
 );
 
