@@ -2,7 +2,7 @@ import React from 'react';
 import Switch from '@/components/Switch';
 import SearchBox from '@/components/SearchBox';
 import { useNavigate } from 'react-router-dom';
-import IMGS from '@/images/logo.png';
+
 import header from './index.less';
 
 const Header: React.FC = (props) => {
@@ -12,7 +12,11 @@ const Header: React.FC = (props) => {
 			<div id={header.app}>
 				<div className={header.app}>
 					<div id={header.logo}>
-						<img src={IMGS} alt='图片加载失败' srcSet='' />
+						<img
+							src='https://cdn.ncxicn.cn/Web/logo.webp'
+							alt='图片加载失败'
+							srcSet=''
+						/>
 					</div>
 					<div id={header.header}>
 						<span

@@ -1,5 +1,4 @@
 import React from 'react';
-import IMGS from '@/images/logo.png';
 import { useNavigate } from 'react-router-dom';
 import bottom from './index.less';
 
@@ -11,27 +10,39 @@ const Bottom: React.FC = () => {
 				<div className={bottom.bottom}>
 					<div className={bottom.bottomCopyright}>
 						<header>
-							<img src={IMGS} alt='' srcSet='' />
+							<img src='https://cdn.ncxicn.cn/Web/logo.webp' alt='' srcSet='' />
 						</header>
 						<div>尊重学术，敬畏知识，永远保持一颗学徒的心</div>
 						<div>
 							<div className={bottom.bottomCopyrightContent}>
-								<span onClick={() => navigate('/agreement/statement')}>
-									网站声明
-								</span>
-								<span onClick={() => navigate('/agreement/disclaimer')}>
-									免责声明
-								</span>
-								<span onClick={() => navigate('/agreement/license')}>
-									开源许可协议
-								</span>
-								<span>陕ICP备2022003802号-1</span>
+								<a
+									href='http://localhost:3000/agreement/statement'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<span>网站声明</span>
+								</a>
+								<a
+									href='http://localhost:3000/agreement/disclaimer'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<span>免责声明</span>
+								</a>
+								<a
+									href='http://localhost:3000/agreement/license'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<span>开源许可协议</span>
+								</a>
+								<a href='https://beian.miit.gov.cn/'>
+									<span>陕ICP备2022003802号-1</span>
+								</a>
 							</div>
 							<span className={bottom.Copyright}>
-								<a href='https://beian.miit.gov.cn/'>
-									Copyright © 2022 NCXICN.CN All Rights Reserved. 前端技术宅
-									版权所有
-								</a>
+								Copyright © 2022 NCXICN.CN All Rights Reserved. 前端技术宅
+								版权所有
 							</span>
 						</div>
 					</div>

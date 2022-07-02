@@ -29,7 +29,7 @@ const Agreement: React.FC = (props) => {
 			</header>
 			<div id={agreement.content}>
 				<div>
-					<h3>版权与免责声明</h3>
+					<h3>{state}</h3>
 					<p>最近修订日期：2021年07月</p>
 				</div>
 			</div>
